@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, TextInput, Button, StatusBar, Platform, SafeAreaView } from 'react-native';
+import { styles } from './styles';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <View style={styles.container}>
+        <View style={styles.imputContainer}>
+          <TextInput style={styles.input} 
+          placeholder='add new tasks'
+          autoCapitalize='none'
+          autoCorrect={false}
+          cursorColor='#A8577E'
+          selectionColor='#E2E4F3'
+          placeholderTextColor='#030113'
+          />
+          <Button title='Create' color='#160BA4' />
+        </View>
+      </View>
+    </SafeAreaView>
+    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
