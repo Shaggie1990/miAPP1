@@ -1,6 +1,4 @@
 import { StyleSheet, StatusBar } from "react-native";
-
-
 export const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
@@ -9,10 +7,9 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         marginHorizontal: 20,
-        paddingTop: StatusBar.currentHeight,
-
+        paddingTop: StatusBar.currentHeight
     },
-    imputContainer: {
+    inputContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
     },
@@ -21,9 +18,7 @@ export const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 10,
         paddingHorizontal: 10,
-        color: '#160BA4',
-        height: 40,
-        borderColor: '#F4A5AE',
+        color: '#212121',
         fontSize: 14,
     }
 });
